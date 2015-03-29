@@ -18,7 +18,7 @@
 		</div>
 		<div class="card-body row" collapse="!isCollapsed">
 			<div class="col-sm-12">
-				<img src="assets/schools/{{college.unitid}}.png" data-holder-rendered="true" style="width:100%; margin:8px 0;">
+				<img src="assets/schools/{{college.unitid}}.png" class="img-thumbnail" data-holder-rendered="true" style="width:100%; margin:8px 0;">
 				<dl class="definition-list">
 	                <dt>Website</dt>
 	                <dd><a href="{{college.website}}" target="_blank">{{college.website}}</a></dd>
@@ -46,7 +46,7 @@
 		</div>
 		<div class="card-body row" collapse="!isCollapsed">
 			<div class="col-sm-12">
-				<img src="assets/schools/{{college.unitid}}.png" data-holder-rendered="true" style="width:100%; margin:8px 0;">
+				<img src="assets/schools/{{college.unitid}}.png" data-holder-rendered="true" style="width:100%; margin:8px 0;" class="img-thumbnail">
 				<dl class="definition-list">
 	                <dt>Website</dt>
 	                <dd><a href="{{college.website}}" target="_blank">{{college.website}}</a></dd>
@@ -63,5 +63,5 @@
 </div>
 
 <div ng-if="!$root.mainCollegeList">
-	<p>You have not selected any schools yet. Go back and <a href="#/results">select some schools</a>!</p>
+	<p>You have not selected any schools yet. Go back and <a href="#/selectedList">select some schools</a>!</p>
 </div>

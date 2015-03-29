@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+.idea/
+*.iml
+*.iws
+*.ipr
+*.pyc
+=======
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+tmp
+.DS_Store
+.idea
+>>>>>>> docs(README): add alternative git clone method

@@ -1,0 +1,182 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.5.1
+3 info using node@v0.12.0
+4 verbose install where, deps [ '/Users/pramigans/startupWeekend/coachCruz-2',
+4 verbose install   [ 'karma',
+4 verbose install     'protractor',
+4 verbose install     'http-server',
+4 verbose install     'bower',
+4 verbose install     'shelljs',
+4 verbose install     'karma-junit-reporter' ] ]
+5 verbose install where, peers [ '/Users/pramigans/startupWeekend/coachCruz-2', [] ]
+6 info preinstall angular-seed@0.0.0
+7 verbose already installed skipping karma-junit-reporter@^0.2.2 /Users/pramigans/startupWeekend/coachCruz-2
+8 verbose already installed skipping karma@~0.10 /Users/pramigans/startupWeekend/coachCruz-2
+9 verbose already installed skipping protractor@^1.1.1 /Users/pramigans/startupWeekend/coachCruz-2
+10 verbose already installed skipping http-server@^0.6.1 /Users/pramigans/startupWeekend/coachCruz-2
+11 verbose already installed skipping bower@^1.3.1 /Users/pramigans/startupWeekend/coachCruz-2
+12 verbose already installed skipping shelljs@^0.2.6 /Users/pramigans/startupWeekend/coachCruz-2
+13 silly install resolved []
+14 info build /Users/pramigans/startupWeekend/coachCruz-2
+15 verbose linkStuff [ false, false, false, '/Users/pramigans/startupWeekend' ]
+16 info linkStuff angular-seed@0.0.0
+17 verbose linkBins angular-seed@0.0.0
+18 verbose linkMans angular-seed@0.0.0
+19 verbose rebuildBundles angular-seed@0.0.0
+20 verbose rebuildBundles [ '.bin',
+20 verbose rebuildBundles   'bower',
+20 verbose rebuildBundles   'http-server',
+20 verbose rebuildBundles   'karma',
+20 verbose rebuildBundles   'karma-chrome-launcher',
+20 verbose rebuildBundles   'karma-coffee-preprocessor',
+20 verbose rebuildBundles   'karma-firefox-launcher',
+20 verbose rebuildBundles   'karma-html2js-preprocessor',
+20 verbose rebuildBundles   'karma-jasmine',
+20 verbose rebuildBundles   'karma-junit-reporter',
+20 verbose rebuildBundles   'karma-phantomjs-launcher',
+20 verbose rebuildBundles   'karma-requirejs',
+20 verbose rebuildBundles   'karma-script-launcher',
+20 verbose rebuildBundles   'protractor',
+20 verbose rebuildBundles   'requirejs',
+20 verbose rebuildBundles   'shelljs' ]
+21 verbose rebuild bundle /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-chrome-launcher
+22 info build /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-chrome-launcher
+23 info preinstall karma-chrome-launcher@0.1.7
+24 verbose linkStuff [ false,
+24 verbose linkStuff   false,
+24 verbose linkStuff   false,
+24 verbose linkStuff   '/Users/pramigans/startupWeekend/coachCruz-2/node_modules' ]
+25 info linkStuff karma-chrome-launcher@0.1.7
+26 verbose linkBins karma-chrome-launcher@0.1.7
+27 verbose linkMans karma-chrome-launcher@0.1.7
+28 verbose rebuildBundles karma-chrome-launcher@0.1.7
+29 info install karma-chrome-launcher@0.1.7
+30 info postinstall karma-chrome-launcher@0.1.7
+31 verbose rebuild bundle /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-coffee-preprocessor
+32 info build /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-coffee-preprocessor
+33 info preinstall karma-coffee-preprocessor@0.1.3
+34 verbose linkStuff [ false,
+34 verbose linkStuff   false,
+34 verbose linkStuff   false,
+34 verbose linkStuff   '/Users/pramigans/startupWeekend/coachCruz-2/node_modules' ]
+35 info linkStuff karma-coffee-preprocessor@0.1.3
+36 verbose linkBins karma-coffee-preprocessor@0.1.3
+37 verbose linkMans karma-coffee-preprocessor@0.1.3
+38 verbose rebuildBundles karma-coffee-preprocessor@0.1.3
+39 verbose rebuildBundles [ '.bin', 'coffee-script' ]
+40 info install karma-coffee-preprocessor@0.1.3
+41 info postinstall karma-coffee-preprocessor@0.1.3
+42 verbose rebuild bundle /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-firefox-launcher
+43 info build /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-firefox-launcher
+44 info preinstall karma-firefox-launcher@0.1.4
+45 verbose linkStuff [ false,
+45 verbose linkStuff   false,
+45 verbose linkStuff   false,
+45 verbose linkStuff   '/Users/pramigans/startupWeekend/coachCruz-2/node_modules' ]
+46 info linkStuff karma-firefox-launcher@0.1.4
+47 verbose linkBins karma-firefox-launcher@0.1.4
+48 verbose linkMans karma-firefox-launcher@0.1.4
+49 verbose rebuildBundles karma-firefox-launcher@0.1.4
+50 info install karma-firefox-launcher@0.1.4
+51 info postinstall karma-firefox-launcher@0.1.4
+52 verbose rebuild bundle /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-html2js-preprocessor
+53 info build /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-html2js-preprocessor
+54 info preinstall karma-html2js-preprocessor@0.1.0
+55 verbose linkStuff [ false,
+55 verbose linkStuff   false,
+55 verbose linkStuff   false,
+55 verbose linkStuff   '/Users/pramigans/startupWeekend/coachCruz-2/node_modules' ]
+56 info linkStuff karma-html2js-preprocessor@0.1.0
+57 verbose linkBins karma-html2js-preprocessor@0.1.0
+58 verbose linkMans karma-html2js-preprocessor@0.1.0
+59 verbose rebuildBundles karma-html2js-preprocessor@0.1.0
+60 info install karma-html2js-preprocessor@0.1.0
+61 info postinstall karma-html2js-preprocessor@0.1.0
+62 verbose rebuild bundle /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-jasmine
+63 info build /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-jasmine
+64 info preinstall karma-jasmine@0.1.5
+65 verbose linkStuff [ false,
+65 verbose linkStuff   false,
+65 verbose linkStuff   false,
+65 verbose linkStuff   '/Users/pramigans/startupWeekend/coachCruz-2/node_modules' ]
+66 info linkStuff karma-jasmine@0.1.5
+67 verbose linkBins karma-jasmine@0.1.5
+68 verbose linkMans karma-jasmine@0.1.5
+69 verbose rebuildBundles karma-jasmine@0.1.5
+70 info install karma-jasmine@0.1.5
+71 info postinstall karma-jasmine@0.1.5
+72 verbose rebuild bundle /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-phantomjs-launcher
+73 info build /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-phantomjs-launcher
+74 info preinstall karma-phantomjs-launcher@0.1.4
+75 verbose linkStuff [ false,
+75 verbose linkStuff   false,
+75 verbose linkStuff   false,
+75 verbose linkStuff   '/Users/pramigans/startupWeekend/coachCruz-2/node_modules' ]
+76 info linkStuff karma-phantomjs-launcher@0.1.4
+77 verbose linkBins karma-phantomjs-launcher@0.1.4
+78 verbose linkMans karma-phantomjs-launcher@0.1.4
+79 verbose rebuildBundles karma-phantomjs-launcher@0.1.4
+80 verbose rebuildBundles [ '.bin', 'phantomjs' ]
+81 info install karma-phantomjs-launcher@0.1.4
+82 info postinstall karma-phantomjs-launcher@0.1.4
+83 verbose rebuild bundle /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-requirejs
+84 info build /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-requirejs
+85 info preinstall karma-requirejs@0.2.2
+86 verbose linkStuff [ false,
+86 verbose linkStuff   false,
+86 verbose linkStuff   false,
+86 verbose linkStuff   '/Users/pramigans/startupWeekend/coachCruz-2/node_modules' ]
+87 info linkStuff karma-requirejs@0.2.2
+88 verbose linkBins karma-requirejs@0.2.2
+89 verbose linkMans karma-requirejs@0.2.2
+90 verbose rebuildBundles karma-requirejs@0.2.2
+91 info install karma-requirejs@0.2.2
+92 info postinstall karma-requirejs@0.2.2
+93 verbose rebuild bundle /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-script-launcher
+94 info build /Users/pramigans/startupWeekend/coachCruz-2/node_modules/karma-script-launcher
+95 info preinstall karma-script-launcher@0.1.0
+96 verbose linkStuff [ false,
+96 verbose linkStuff   false,
+96 verbose linkStuff   false,
+96 verbose linkStuff   '/Users/pramigans/startupWeekend/coachCruz-2/node_modules' ]
+97 info linkStuff karma-script-launcher@0.1.0
+98 verbose linkBins karma-script-launcher@0.1.0
+99 verbose linkMans karma-script-launcher@0.1.0
+100 verbose rebuildBundles karma-script-launcher@0.1.0
+101 info install karma-script-launcher@0.1.0
+102 info postinstall karma-script-launcher@0.1.0
+103 verbose rebuild bundle /Users/pramigans/startupWeekend/coachCruz-2/node_modules/requirejs
+104 info build /Users/pramigans/startupWeekend/coachCruz-2/node_modules/requirejs
+105 info preinstall requirejs@2.1.16
+106 verbose linkStuff [ false,
+106 verbose linkStuff   false,
+106 verbose linkStuff   false,
+106 verbose linkStuff   '/Users/pramigans/startupWeekend/coachCruz-2/node_modules' ]
+107 info linkStuff requirejs@2.1.16
+108 verbose linkBins requirejs@2.1.16
+109 verbose link bins [ { 'r.js': './bin/r.js' },
+109 verbose link bins   '/Users/pramigans/startupWeekend/coachCruz-2/node_modules/.bin',
+109 verbose link bins   false ]
+110 verbose linkMans requirejs@2.1.16
+111 verbose rebuildBundles requirejs@2.1.16
+112 verbose gentlyRm vacuuming /Users/pramigans/startupWeekend/coachCruz-2/node_modules/.bin/r.js
+113 silly gentlyRm purging /Users/pramigans/startupWeekend/coachCruz-2/node_modules/.bin/r.js
+114 verbose stack Error: EACCES, unlink '/Users/pramigans/startupWeekend/coachCruz-2/node_modules/.bin/r.js'
+114 verbose stack     at Error (native)
+115 verbose cwd /Users/pramigans/startupWeekend/coachCruz-2
+116 error Darwin 14.1.0
+117 error argv "node" "/usr/local/bin/npm" "install"
+118 error node v0.12.0
+119 error npm  v2.5.1
+120 error path /Users/pramigans/startupWeekend/coachCruz-2/node_modules/.bin/r.js
+121 error code EACCES
+122 error errno -13
+123 error Error: EACCES, unlink '/Users/pramigans/startupWeekend/coachCruz-2/node_modules/.bin/r.js'
+123 error     at Error (native)
+123 error  { [Error: EACCES, unlink '/Users/pramigans/startupWeekend/coachCruz-2/node_modules/.bin/r.js']
+123 error   errno: -13,
+123 error   code: 'EACCES',
+123 error   path: '/Users/pramigans/startupWeekend/coachCruz-2/node_modules/.bin/r.js' }
+124 error Please try running this command again as root/Administrator.
+125 verbose exit [ -13, true ]

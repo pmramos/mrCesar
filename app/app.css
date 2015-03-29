@@ -1,0 +1,46 @@
+body {background:#F1F2F6; }
+
+/* Overrides */
+.navbar-custom {position: fixed; background-color:rgba(255,255,255,.98)}
+header.main {padding-top:50px;}
+
+
+/* ==== Cards -- College List ==== */
+.card {padding:10px 15px 10px; margin-bottom:8px; -webkit-transition: all 0.15s ease-in; -moz-transition: all 0.15s ease-in; -ms-transition: all 0.15s ease-in; -o-transition: all 0.15s ease-in; transition: all 0.15s ease-in;}
+
+.card-header {position: relative;}
+  .card-header > .card-heading {margin-left:32px; margin-top:0; margin-bottom:0; padding-top:8px; padding-bottom:8px; padding-right:25px; cursor: pointer;}
+.card-header .school-name {font-style: normal; color:#454545; line-height: 20px; font-weight: bold;}
+  
+  /* Chevron (Accordion) */
+  .card-header .card-heading .glyphicon {top:8px; position: absolute; right:0;}
+
+  /* Save Card to List --> Star Interaction */
+  .star .glyphicon {font-size:20px; float:left; top:8px; position: absolute; left:0; cursor: pointer; color: #999; -webkit-transition: all 0.15s ease-in; -moz-transition: all 0.15s ease-in; -ms-transition: all 0.15s ease-in; -o-transition: all 0.15s ease-in; transition: all 0.15s ease-in;}
+
+
+
+  /* Default */
+  .card .star .glyphicon-star-empty {opacity: 1}
+  .card .star .glyphicon-star {opacity: 0; color:#50c1e9;}
+
+  /* Toggle Star On Hover */
+  .card-header .star:hover .glyphicon-star {opacity: 0!important; }
+  .card-header .star:hover .glyphicon-star-empty {opacity: 1!important; color:#50c1e9;}
+
+  /* Selected */
+  .card.selected {background:#e8eff1;}
+  .card.selected .star .glyphicon-star-empty {opacity: 0!important}
+  .card.selected .star .glyphicon-star {opacity: 1!important;}
+
+  .card.selected {outline:1px solid #50c1e9; }
+
+.card-body {margin-bottom: 5px;}
+
+
+/* ==== Timeline ==== */
+@media (max-width: 767px) {
+    .timeline dl dd .event-wrap {padding-left:85px; float:left!important; width:100%;}
+    .timeline dl dd .event-wrap .events {width:100%!important;}
+}
+

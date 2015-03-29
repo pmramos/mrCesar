@@ -3,7 +3,7 @@
 
 
 <!-- Matched Results -->
-<div class="jumbotron card" ng-repeat="college in colleges" ng-class="{'selected': college.selected}">
+<div class="jumbotron card" ng-repeat="college in colleges" ng-class="{'selected': college.selected}" >
 	<div class="card-header" ng-click="saveSelectedList(colleges)">
 		<span class="star" ng-click="college.selected = !college.selected">
 			<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
@@ -15,12 +15,16 @@
 		</div>
 	</div>
 	<div class="card-body row" collapse="!isCollapsed">
-		<div class="col-sm-7 pull-left">
-			<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p> 
-			<p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best. </p>
-		</div>
-		<div class="col-sm-5 pull-right">
-			<img src="http://placehold.it/350x150" data-holder-rendered="true" style="max-width:100%;">
+		<div class="col-sm-12">
+			<img src="assets/schools/{{college.unitid}}.png" data-holder-rendered="true" style="width:100%; margin:8px 0;">
+			<dl class="definition-list">
+                <dt>Website</dt>
+                <dd><a href="{{college.website}}" target="_blank">{{college.website}}</a></dd>
+                <dt>6-Year Grad Rate</dt>
+                <dd>{{college.yrGradRate * 100}}%</dd>
+                <dt>Total Undergrad</dt>
+                <dd>{{college.totalUndergrad}}</dd>
+            </dl>
 		</div>
 	</div>
 </div>

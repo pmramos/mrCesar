@@ -1,25 +1,74 @@
-<h2>Important Dates</h2>
-<p class="description text-muted">We've filtered this list based on the information you provided in your profile.</p>
+<h2>To Dos</h2>
+<p class="description text-muted">There are very important dates for you to hit. They range from global administration processes to specific deadlines from school.</p>
 
-<div class="timeline">
-	<dl>
-		<div ng-repeat="event in deadlines">
-			<dt>{{event.month}}</dt>
-			<div ng-repeat="dates in event.dates">
-				<dd class="clearfix" ng-class-even="'pos-right'" ng-class-odd="'pos-left'">
-					<div class="circ"></div>
-					<div class="time">{{dates.date}}</div>
-					<div class="event-wrap">
-						<div class="events">
-							<div class="pull-left"><img class="events-object img-rounded" src="http://placehold.it/50x40"></div>
-							<div class="events-body">
-								<h4 class="events-heading">Bootstrap</h4>
-								<p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
-							</div>
-						</div>
-					</div>
-				</dd>
+
+<div class="task-list-item">
+	<div class="task-list-wrap" ng-init="activeTask = 'false'">
+		<span class="glyphicon glyphicon-ok-sign text-center" aria-hidden="true" ng-click="activeTask = !active" ng-class=""></span>
+	</div>
+	<div style="width:100%;">
+		<div class="panel panel-primary">
+			<div class="panel-heading clearfix">
+				<h3 class="panel-title">September 1st</h3>
 			</div>
+			<div class="panel-body">Ask two teachers for reccomendation letters</div>
 		</div>
-	</dl>
+	</div>
+</div>
+
+<div class="task-list-item">
+	<div class="task-list-wrap">
+		<span class="glyphicon glyphicon-ok-sign text-center" aria-hidden="true" style="font-size:25px;"></span>
+	</div>
+	<div style="width:100%;">
+		<div class="panel panel-primary">
+			<div class="panel-heading clearfix">
+				<h3 class="panel-title">October 15th</h3>
+			</div>
+			<div class="panel-body">Recommended deadline for Early Action.</div>
+		</div>
+	</div>
+</div>
+
+<div class="task-list-item">
+	<div class="task-list-wrap">
+		<span class="glyphicon glyphicon-ok-sign text-center" aria-hidden="true" style="font-size:25px;"></span>
+	</div>
+	<div style="width:100%;">
+		<div class="panel panel-info">
+			<div class="panel-heading clearfix">
+				<h3 class="panel-title">November 1st</h3>
+			</div>
+			<div class="panel-body">Early Action Deadline for CUNY Schools</div>
+		</div>
+	</div>
+</div>
+
+<div class="task-list-item">
+	<div class="task-list-wrap">
+		<span class="glyphicon glyphicon-ok-sign text-center" aria-hidden="true" style="font-size:25px;"></span>
+	</div>
+	<div style="width:100%;">
+		<div class="panel panel-info">
+			<div class="panel-heading clearfix">
+				<h3 class="panel-title">November 15th</h3>
+			</div>
+			<div class="panel-body">Early Decision Deadline for Lafayette College</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="task-list-item">
+	<div class="task-list-wrap">
+		<span class="glyphicon glyphicon-ok-sign text-center" aria-hidden="true" style="font-size:25px;"></span>
+	</div>
+	<div style="width:100%;">
+		<div class="panel panel-primary">
+			<div class="panel-heading clearfix">
+				<h3 class="panel-title">December 1st</h3>
+			</div>
+			<div class="panel-body">Start Asking Parents for Financial Aid Documents.</div>
+		</div>
+	</div>
 </div>

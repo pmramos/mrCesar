@@ -1,15 +1,39 @@
-<div class="center">
+<div class="progress">
+  <div class="progress progress-bar progress-bar-success progress-bar-striped"
+       role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width:50%"></div>
+</div>
 
-<h2>
-  Hi there!<br>I'm Mr. Cesar.
-</h2>
-<br>
-  <img src="http://placehold.it/350x150" data-holder-rendered="true" style="max-width:100%;">
-<br>
-<br>
-<p>
-  I'm here to guide you through the college process, from search to submit to enrollment.
-</p>
-<br>
-<button class="btn btn-primary"><a href="#/profileBuilder" class="white">Let's Get Started</a></button>
+<div class="row">
+  <div class="jumbotron card">
+    <div class="card-body text-center jumbotron-content" style="min-height: 40%;  ">
+      <p>Build your college list.</p>
+    </div>
+  </div>
+</div>
+<div ng-if="hasDeadline" class="row text-center">
+  <div class="col-md-4 col-xs-4 jumbotron">
+    <div class="jumbotron-contents">
+      {{collegeDeadline.date | date}}
+    </div>
+  </div>
+  <div class="col-md-8 col-xs-8 jumbotron pull-right">
+    <div class="jumbotron-contents">
+      {{collegeDeadline.text}}
+    </div>
+  </div>
+</div>
+<div ng-if="!hasDeadline" class="row text-center">
+  <div class="col-md-12 col-xs-12 jumbotron pull-right">
+    <div class="jumbotron-contents">
+      {{collegeDeadline.text}}
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="jumbotron">
+    <div class="jumbotron-contents text-center">
+      <p>Hey, did you remember to sign up for the college fair on Friday?</p>
+    </div>
+  </div>
 </div>

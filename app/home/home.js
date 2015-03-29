@@ -7,8 +7,4 @@ angular.module('myApp.home', ['ngRoute'])
     templateUrl: 'home/home.html',
     controller: 'HomeCtrl'
   });
-}])
-
-.controller('HomeCtrl', [function() {
-
 }]);

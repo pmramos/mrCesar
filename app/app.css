@@ -61,5 +61,9 @@ header.main {padding-top:50px;}
 }
 
 .p1 {
-  padding: 1em 1em 1em 1em;
+  padding: .35em .35em .35em .35em;
+}
+
+.med-icon {
+  font-size: 2em;
 }

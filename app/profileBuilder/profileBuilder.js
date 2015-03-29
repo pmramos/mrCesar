@@ -9,6 +9,7 @@ angular.module('myApp.profileBuilder', ['ngRoute'])
   });
 }])
 
-.controller('ProfileCtrl', [function() {
-
-}]);
+.controller('ProfileCtrl', function($scope) {
+  $scope.page = 0;
+  $scope.name = "Anonymous Student";
+});

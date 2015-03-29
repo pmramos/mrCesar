@@ -3,7 +3,7 @@
 
 
 <!-- Matched Results -->
-<div class="jumbotron card" ng-repeat="college in colleges" ng-class="{'selected': college.selected}">
+<div class="jumbotron card" ng-repeat="college in colleges" ng-class="{'selected': college.selected}" >
 	<div class="card-header" ng-click="saveSelectedList(colleges)">
 		<span class="star" ng-click="college.selected = !college.selected">
 			<span class="glyphicon glyphicon-star" aria-hidden="true"></span>

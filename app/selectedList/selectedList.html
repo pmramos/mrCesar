@@ -4,7 +4,7 @@
 <div ng-if="$root.mainCollegeList">
 
 	<!-- Selected List Results -->
-	<h4>Reach Schools</h4>
+	<h4>Reach</h4>
 	<div class="jumbotron card" ng-repeat="college in $root.mainCollegeList" ng-if="college.selected && college.admissibility == 'Reach'">
 		<div class="card-header">
 			<span class="star" ng-click="college.selected = !college.selected">
@@ -12,23 +12,27 @@
 				<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
 			</span>
 			<div class="card-heading"ng-click="isCollapsed = !isCollapsed">
-				<a href="" class="school-name toggle" >{{college.institutionName}}</a> 
+				<a href="" class="school-name toggle" >{{college.institutionName}}</a>
 				<i class="pull-right glyphicon ng-scope glyphicon-chevron-right" ng-class="{'glyphicon-chevron-down': isCollapsed, 'glyphicon-chevron-right': !isCollapsed}"></i>
 			</div>
 		</div>
 		<div class="card-body row" collapse="!isCollapsed">
-			<div class="col-sm-7 pull-left">
-				<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p> 
-				<p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best. </p>
-			</div>
-			<div class="col-sm-5 pull-right">
-				<img src="assets/schools/{{college.unitid}}.png" data-holder-rendered="true" style="max-width:100%;">
+			<div class="col-sm-12">
+				<img src="assets/schools/{{college.unitid}}.png" class="img-thumbnail" data-holder-rendered="true" style="width:100%; margin:8px 0;">
+				<dl class="definition-list">
+	                <dt>Website</dt>
+	                <dd><a href="{{college.website}}" target="_blank">{{college.website}}</a></dd>
+	                <dt>6-Year Grad Rate</dt>
+	                <dd>{{college.yrGradRate * 100}}%</dd>
+	                <dt>Total Undergrad</dt>
+	                <dd>{{college.totalUndergrad}}</dd>
+	            </dl>
 			</div>
 		</div>
 	</div>
 
 
-	<h4>Target Schools</h4>
+	<h4>Solid</h4>
 	<div class="jumbotron card" ng-repeat="college in $root.mainCollegeList" ng-if="college.selected && college.admissibility == 'Target'">
 		<div class="card-header">
 			<span class="star" ng-click="college.selected = !college.selected">
@@ -36,20 +40,43 @@
 				<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
 			</span>
 			<div class="card-heading"ng-click="isCollapsed = !isCollapsed">
-				<a href="" class="school-name toggle" >{{college.institutionName}}</a> 
+				<a href="" class="school-name toggle" >{{college.institutionName}}</a>
 				<i class="pull-right glyphicon ng-scope glyphicon-chevron-right" ng-class="{'glyphicon-chevron-down': isCollapsed, 'glyphicon-chevron-right': !isCollapsed}"></i>
 			</div>
 		</div>
 		<div class="card-body row" collapse="!isCollapsed">
-			<div class="col-sm-7 pull-left">
-				<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p> 
-				<p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best. </p>
-			</div>
-			<div class="col-sm-5 pull-right">
-				<img src="assets/schools/{{college.unitid}}.png" data-holder-rendered="true" style="max-width:100%;">
+
+			<div class="col-sm-12">
+				<img src="assets/schools/{{college.unitid}}.png" data-holder-rendered="true" style="width:100%; margin:8px 0;" class="img-thumbnail">
+				<dl class="definition-list">
+	                <dt>Website</dt>
+	                <dd><a href="{{college.website}}" target="_blank">{{college.website}}</a></dd>
+	                <dt>6-Year Grad Rate</dt>
+	                <dd>{{college.yrGradRate * 100}}%</dd>
+	                <dt>Total Undergrad</dt>
+	                <dd>{{college.totalUndergrad}}</dd>
+	            </dl>
 			</div>
 		</div>
 	</div>
+
+	<h4>Safety</h4>
+		<div class="card-body row">
+			<div class="col-sm-7 pull-left">
+				<p>Make sure you have a range of options. Look for a school in your range. </p>
+				<div class="input-group">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+					</span>
+					<input type="text" class="form-control" placeholder="Find another school...">
+				</div><!-- /input-group -->
+
+			</div>
+
+		</div>
+
+	</div>
+
 
 
 </div>

@@ -16,16 +16,21 @@
 	</div>
 	<div class="card-body row" collapse="!isCollapsed">
 		<div class="col-sm-12">
-			<img src="assets/schools/{{college.unitid}}.png" data-holder-rendered="true" style="width:100%; margin:8px 0;">
+			<img src="assets/schools/{{college.unitid}}.png" data-holder-rendered="true" style="width:100%; margin:8px 0;" class="img-thumbnail">
 			<dl class="definition-list">
+                <dt>Website</dt>
+                <dd><a href="{{college.website}}" target="_blank">{{college.website}}</a></dd>
                 <dt>6-Year Grad Rate</dt>
                 <dd>{{college.yrGradRate * 100}}%</dd>
-                <dt>Phone Number</dt>
-                <dd>555-555-5555</dd>
-                <dd>555-555-5554</dd>
-                <dt>Job Title</dt>
-                <dd>Carpenter</dd>
+                <dt>Total Undergrad</dt>
+                <dd>{{college.totalUndergrad}}</dd>
             </dl>
 		</div>
 	</div>
 </div>
+
+<div style="height:50px; width:10px;">a</div>
+
+<footer class="main">
+	<a class="btn btn-primary" style="text-align:center" href="#/selectedList">Go To Your List</a>
+</footer>

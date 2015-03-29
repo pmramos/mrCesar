@@ -47,6 +47,8 @@ header.main {padding-top:50px;}
   .task-list-wrap .glyphicon-ok-sign:hover {color:#aaa;}
 
 
+footer.main {position: fixed; border-top:1px solid #eee; bottom:0; height:50px; width:100%; background:#fff; left:0; padding:8px 15px;}
+  footer.main .btn {float:right}
 
 
 /* ==== Timeline ==== */
@@ -72,5 +74,9 @@ header.main {padding-top:50px;}
 }
 
 .p1 {
-  padding: 1em 1em 1em 1em;
+  padding: .35em .35em .35em .35em;
+}
+
+.med-icon {
+  font-size: 2em;
 }

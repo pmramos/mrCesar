@@ -74,5 +74,9 @@ footer.main {position: fixed; border-top:1px solid #eee; bottom:0; height:50px; 
 }
 
 .p1 {
-  padding: 1em 1em 1em 1em;
+  padding: .35em .35em .35em .35em;
+}
+
+.med-icon {
+  font-size: 2em;
 }

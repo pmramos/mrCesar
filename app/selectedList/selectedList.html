@@ -4,7 +4,7 @@
 <div ng-if="$root.mainCollegeList">
 
 	<!-- Selected List Results -->
-	<h4>Reach Schools</h4>
+	<h4>Reach</h4>
 	<div class="jumbotron card" ng-repeat="college in $root.mainCollegeList" ng-if="college.selected && college.admissibility == 'Reach'">
 		<div class="card-header">
 			<span class="star" ng-click="college.selected = !college.selected">
@@ -12,7 +12,7 @@
 				<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
 			</span>
 			<div class="card-heading"ng-click="isCollapsed = !isCollapsed">
-				<a href="" class="school-name toggle" >{{college.institutionName}}</a> 
+				<a href="" class="school-name toggle" >{{college.institutionName}}</a>
 				<i class="pull-right glyphicon ng-scope glyphicon-chevron-right" ng-class="{'glyphicon-chevron-down': isCollapsed, 'glyphicon-chevron-right': !isCollapsed}"></i>
 			</div>
 		</div>
@@ -32,7 +32,7 @@
 	</div>
 
 
-	<h4>Target Schools</h4>
+	<h4>Solid</h4>
 	<div class="jumbotron card" ng-repeat="college in $root.mainCollegeList" ng-if="college.selected && college.admissibility == 'Target'">
 		<div class="card-header">
 			<span class="star" ng-click="college.selected = !college.selected">
@@ -40,11 +40,12 @@
 				<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
 			</span>
 			<div class="card-heading"ng-click="isCollapsed = !isCollapsed">
-				<a href="" class="school-name toggle" >{{college.institutionName}}</a> 
+				<a href="" class="school-name toggle" >{{college.institutionName}}</a>
 				<i class="pull-right glyphicon ng-scope glyphicon-chevron-right" ng-class="{'glyphicon-chevron-down': isCollapsed, 'glyphicon-chevron-right': !isCollapsed}"></i>
 			</div>
 		</div>
 		<div class="card-body row" collapse="!isCollapsed">
+
 			<div class="col-sm-12">
 				<img src="assets/schools/{{college.unitid}}.png" data-holder-rendered="true" style="width:100%; margin:8px 0;" class="img-thumbnail">
 				<dl class="definition-list">
@@ -59,9 +60,27 @@
 		</div>
 	</div>
 
+	<h4>Safety</h4>
+		<div class="card-body row">
+			<div class="col-sm-7 pull-left">
+				<p>Make sure you have a range of options. Look for a school in your range. </p>
+				<div class="input-group">
+					<span class="input-group-btn">
+						<button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+					</span>
+					<input type="text" class="form-control" placeholder="Find another school...">
+				</div><!-- /input-group -->
+
+			</div>
+
+		</div>
+
+	</div>
+
+
 
 </div>
 
 <div ng-if="!$root.mainCollegeList">
-	<p>You have not selected any schools yet. Go back and <a href="#/selectedList">select some schools</a>!</p>
+	<p>You have not selected any schools yet. Go back and <a href="#/results">select some schools</a>!</p>
 </div>

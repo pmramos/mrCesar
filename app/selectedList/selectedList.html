@@ -1,29 +1,57 @@
 <h2>Your College List</h2>
 <p class="description text-muted">Here's the list of colleges you've shown interest in.</p>
 
+<div ng-if="$root.mainCollegeList">
 
-<!-- Selected List Results -->
-
-<div class="jumbotron card" ng-repeat="college in $root.mainCollegeList" ng-if="college.selected">
-	<div class="card-header">
-		<span class="star" ng-click="college.selected = !college.selected">
-			<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-			<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
-		</span>
-		<div class="card-heading"ng-click="isCollapsed = !isCollapsed">
-			<a href="" class="school-name toggle" >{{college.institutionName}}</a> 
-			<i class="pull-right glyphicon ng-scope glyphicon-chevron-right" ng-class="{'glyphicon-chevron-down': isCollapsed, 'glyphicon-chevron-right': !isCollapsed}"></i>
+	<!-- Selected List Results -->
+	<h4>Reach Schools</h4>
+	<div class="jumbotron card" ng-repeat="college in $root.mainCollegeList" ng-if="college.selected && college.admissibility == 'Reach'">
+		<div class="card-header">
+			<span class="star" ng-click="college.selected = !college.selected">
+				<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+				<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+			</span>
+			<div class="card-heading"ng-click="isCollapsed = !isCollapsed">
+				<a href="" class="school-name toggle" >{{college.institutionName}}</a> 
+				<i class="pull-right glyphicon ng-scope glyphicon-chevron-right" ng-class="{'glyphicon-chevron-down': isCollapsed, 'glyphicon-chevron-right': !isCollapsed}"></i>
+			</div>
+		</div>
+		<div class="card-body row" collapse="!isCollapsed">
+			<div class="col-sm-7 pull-left">
+				<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p> 
+				<p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best. </p>
+			</div>
+			<div class="col-sm-5 pull-right">
+				<img src="http://placehold.it/350x150" data-holder-rendered="true" style="max-width:100%;">
+			</div>
 		</div>
 	</div>
-	<div class="card-body row" collapse="!isCollapsed">
-		<div class="col-sm-7 pull-left">
-			<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p> 
-			<p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best. </p>
+
+
+	<h4>Target Schools</h4>
+	<div class="jumbotron card" ng-repeat="college in $root.mainCollegeList" ng-if="college.selected && college.admissibility == 'Target'">
+		<div class="card-header">
+			<span class="star" ng-click="college.selected = !college.selected">
+				<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+				<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+			</span>
+			<div class="card-heading"ng-click="isCollapsed = !isCollapsed">
+				<a href="" class="school-name toggle" >{{college.institutionName}}</a> 
+				<i class="pull-right glyphicon ng-scope glyphicon-chevron-right" ng-class="{'glyphicon-chevron-down': isCollapsed, 'glyphicon-chevron-right': !isCollapsed}"></i>
+			</div>
 		</div>
-		<div class="col-sm-5 pull-right">
-			<img src="http://placehold.it/350x150" data-holder-rendered="true" style="max-width:100%;">
+		<div class="card-body row" collapse="!isCollapsed">
+			<div class="col-sm-7 pull-left">
+				<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.</p> 
+				<p>In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best. </p>
+			</div>
+			<div class="col-sm-5 pull-right">
+				<img src="http://placehold.it/350x150" data-holder-rendered="true" style="max-width:100%;">
+			</div>
 		</div>
 	</div>
+
+
 </div>
 
 <div ng-if="!$root.mainCollegeList">

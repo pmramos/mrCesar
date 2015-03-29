@@ -11,7 +11,7 @@ header.main {padding-top:50px;}
 .card-header {position: relative;}
   .card-header > .card-heading {margin-left:32px; margin-top:0; margin-bottom:0; padding-top:8px; padding-bottom:8px; padding-right:25px; cursor: pointer;}
 .card-header .school-name {font-style: normal; color:#454545; line-height: 20px; font-weight: bold;}
-  
+
   /* Chevron (Accordion) */
   .card-header .card-heading .glyphicon {top:8px; position: absolute; right:0;}
 
@@ -44,3 +44,22 @@ header.main {padding-top:50px;}
     .timeline dl dd .event-wrap .events {width:100%!important;}
 }
 
+.center {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.thin-black-border {
+  border: 1px solid black;
+}
+
+.p1 {
+  padding: 1em 1em 1em 1em;
+}

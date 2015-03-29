@@ -5,6 +5,7 @@ angular.module('myApp', [
   'ngRoute',
   'myApp.results',
   'myApp.home',
+  'myApp.profileBuilder',
   'myApp.deadlines',
   'myApp.selectedList',
   'myApp.version',

@@ -13,8 +13,9 @@ angular.module('myApp.home', ['ngRoute'])
   scope.hasDeadline = false;
   if(rootScope) {
     if (rootScope.mainCollegeList) {
+      var firstCollege = rootScope.mainCollegeList[0];
       scope.hasDeadline = true;
-      scope.collegeDeadline = {"text": "Early Deadline 1", "date": rootScope.mainCollegeList[0]['edI']}
+      scope.collegeDeadline = {"text": "Early Deadline 1", "school": firstCollege.name, "date": firstCollege.edI}
     } else {
       scope.hasDeadline = false;
       scope.collegeDeadline = {"text": "No deadlines coming up"}

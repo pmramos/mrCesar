@@ -37,6 +37,17 @@ header.main {padding-top:50px;}
 
 .card-body {margin-bottom: 5px;}
 
+.definition-list dt {margin-top:8px;} 
+
+
+/* Task Lists */
+.task-list-item {position:relative; padding-left:40px;}
+  .task-list-wrap {position:absolute; left:0;}
+  .task-list-wrap .glyphicon-ok-sign {color:#bbb; cursor: pointer; font-size:25px;}
+  .task-list-wrap .glyphicon-ok-sign:hover {color:#aaa;}
+
+
+
 
 /* ==== Timeline ==== */
 @media (max-width: 767px) {

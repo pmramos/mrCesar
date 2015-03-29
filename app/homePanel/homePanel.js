@@ -1,20 +1,20 @@
 'use strict';
 
-angular.module('myApp.home', ['ngRoute'])
+angular.module('myApp.homePanel', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/home', {
-    templateUrl: 'home/home.html',
-    controller: 'HomeCtrl'
+  $routeProvider.when('/homePanel', {
+    templateUrl: 'homePanel/homePanel.html',
+    controller: 'HomePanelCtrl'
   });
 }])
 
-.controller('HomeCtrl', ['$scope', '$rootScope', function(scope, rootScope) {
+.controller('HomePanelCtrl', ['$scope', '$rootScope', function(scope, rootScope) {
   scope.hasDeadline = false;
   if(rootScope) {
-    if (scope.mainCollegeList) {
-      scope.hasDeadlines = true;
-      scope.collegeDeadline = {"text": "Early Deadline 1", "date": rootScope.mainCollegeList[0]}
+    if (rootScope.mainCollegeList) {
+      scope.hasDeadline = true;
+      scope.collegeDeadline = {"text": "Early Deadline 1", "date": rootScope.mainCollegeList[0]['edI']}
     } else {
       scope.hasDeadline = false;
       scope.collegeDeadline = {"text": "No deadlines coming up"}

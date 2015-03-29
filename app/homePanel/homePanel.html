@@ -5,26 +5,35 @@
 
 <div class="row">
   <div class="jumbotron card">
-    <div class="card-body text-center">
+    <div class="card-body text-center jumbotron-content" style="min-height: 40%;  ">
       <h2>Build your college list.</h2>
     </div>
   </div>
 </div>
-<div ng-hide="hasDeadline" class="row">
+<div ng-if="hasDeadline" class="row text-center">
   <div class="col-md-4 col-xs-4 jumbotron">
-    {{collegeDeadline.date}}
+    <div class="jumbotron-contents">
+      {{collegeDeadline.date | date}}
+    </div>
   </div>
-  <div class="col-md-8 col-xs-8 jumbotron">
-    {{collegeDeadline.text}}
+  <div class="col-md-8 col-xs-8 jumbotron pull-right">
+    <div class="jumbotron-contents">
+      {{collegeDeadline.text}}
+    </div>
   </div>
 </div>
-<div ng-show    ="!hasDeadline" class="row jumbotron text-center ng-hide">
-  <div class="col-md-12 col-xs-12">
-    <h2>{{collegeDeadline.text}}</h2>
+<div ng-if="!hasDeadline" class="row text-center">
+  <div class="col-md-12 col-xs-12 jumbotron pull-right">
+    <div class="jumbotron-contents">
+      {{collegeDeadline.text}}
+    </div>
   </div>
 </div>
-<div class="popover bottom">
-  <div class="popover-content">
-    <p>Hey, did you remember to ??</p>
+
+<div class="row">
+  <div class="jumbotron">
+    <div class="jumbotron-contents">
+      <p>Hey, did you remember to sign up for the college fair on Friday?</p>
+    </div>
   </div>
 </div>

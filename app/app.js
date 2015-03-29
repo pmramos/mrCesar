@@ -9,6 +9,7 @@ angular.module('myApp', [
   'myApp.deadlines',
   'myApp.selectedList',
   'myApp.version',
+  'myApp.homePanel',
   'ui.bootstrap'
 ]).
 config(['$routeProvider', function($routeProvider) {

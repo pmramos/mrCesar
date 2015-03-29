@@ -1,0 +1,15 @@
+<<<<<<< HEAD
+logs/*
+!.gitkeep
+node_modules/
+bower_components/
+tmp
+.DS_Store
+.idea
+=======
+.idea/
+*.iml
+*.iws
+*.ipr
+*.pyc
+>>>>>>> c40480567209919205878941b653b530adcbcab9
